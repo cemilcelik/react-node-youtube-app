@@ -4,9 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "watch-dev": "NODE_ENV=development webpack-dev-server --hot --inline",
-    "api": "PORT=3000 nodemon server.js",
-    "start": "NODE_ENV=production webpack && node server.js"
+    "watch-dev": "cross-env NODE_ENV=development webpack-dev-server --hot --inline",
+    "api": "cross-env PORT=3000 nodemon server.js",
+    "start": "cross-env NODE_ENV=production webpack && node server.js"
   },
   "author": "",
   "license": "ISC",
